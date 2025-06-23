@@ -1,25 +1,13 @@
-import React from 'react';
-import '../styles/Header.css';
-
-const Header = () => {
+const Error = () => {
     return (
-        <header className='header'>
-            <div className='header-title'>
-                <p>ALDES</p>
-                <p>CONSULTING</p>
-            </div>
-            <ul className='header-links'>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/boutique">Boutique</a></li>
-                <li><a href="/faq">F.A.Q</a></li>
-            </ul>
-            <a className='header-contact' href="/contact">Contact</a>
-        </header>
+        <div>
+            <h1>Oups cette page n'existe pas</h1>
+            <a href="/">Retourner à l'accueil</a>
+        </div>
     );
 };
 
-export default Header;
+export default Error;
 
 
 

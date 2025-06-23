@@ -1,25 +1,12 @@
-import React from 'react';
-import '../styles/Header.css';
+import Header from "../components/Header";
 
-const Header = () => {
-    return (
-        <header className='header'>
-            <div className='header-title'>
-                <p>ALDES</p>
-                <p>CONSULTING</p>
-            </div>
-            <ul className='header-links'>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/boutique">Boutique</a></li>
-                <li><a href="/faq">F.A.Q</a></li>
-            </ul>
-            <a className='header-contact' href="/contact">Contact</a>
-        </header>
-    );
+const Home = () => {
+  return (
+    <Header />
+  );
 };
 
-export default Header;
+export default Home;
 
 
 

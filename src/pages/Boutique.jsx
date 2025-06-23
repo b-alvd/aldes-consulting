@@ -1,12 +1,14 @@
-import Header from "./Header";
+import Header from "../components/Header";
 
-const App = () => {
-  return (
-    <Header />
-  );
-}
+const Boutique = () => {
+    return (
+        <div>
+            <Header />
+        </div>
+    );
+};
 
-export default App;
+export default Boutique;
 
 
 
