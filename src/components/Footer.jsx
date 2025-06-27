@@ -1,17 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+import '../styles/Footer.css';
+
+const Footer = () => {
+    return (
+        <footer className='footer'>
+            <div className='footer-top'>
+                <div className='footer-top-infos'>
+                    <div className='footer-top-infos-title'>
+                        <p>ALDES</p>
+                        <p>CONSULTING</p>
+                    </div>
+                    <ul>
+                        <li><a href="">L</a></li>
+                        <li><a href="">L</a></li>
+                        <li><a href="">L</a></li>
+                        <li><a href="">L</a></li>
+                    </ul>
+                </div>
+                <div className='footer-top-links'>
+                    <div className='footer-top-links-section'>
+                        <h3>LÉGAL</h3>
+                        <ul>
+                            <li><a href="">Mentions légales</a></li>
+                            <li><a href="">Confidentialité</a></li>
+                            <li><a href="">CGU</a></li>
+                        </ul>
+                    </div>
+                    <div className='footer-top-links-section'>
+                        <h3>RACCOURCIS</h3>
+                        <ul>
+                            <li><a href="/">Accueil</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/boutique">Boutique</a></li>
+                            <li><a href="/faq">F.A.Q</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div className='footer-top-links-section'>
+                        <h3>CONTACT</h3>
+                        <ul>
+                            <li><a href="">ALDES Consulting EI</a></li>
+                            <li><a href="">07 81 84 01 05</a></li>
+                            <li><a href="">contact@aldes-consulting.fr</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span className='footer-separator'></span>
+            <p className='footer-copyright'>©2025 ALDES Consulting - Tous droits réservés - Création: b-alvd</p>
+        </footer>
+    );
+};
+
+export default Footer;
 
 
 
 
 
-/*
 //  .:.                            .-++=                                       
 // -###*-                         -*####-                                      
 // *#####*:                     .+##***#=                                      
@@ -80,4 +125,3 @@ body {
 //             .****#**###*-=**#*##**+==.                                      
 //              ....::::::--=********+==.                                      
 //                         .::----=--:..                                       
-*/

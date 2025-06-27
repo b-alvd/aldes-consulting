@@ -1,12 +1,14 @@
 header.header {
+    z-index: 1000;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 30px;
     padding: 15px 0;
+    width: 100%;
 
-    border-radius: 5px;
     background-color: #333333;
+    box-shadow: 0 5px 25px rgba(160, 160, 160, 0.2);
 }
 
 header.header div.header-title {
@@ -18,13 +20,13 @@ header.header div.header-title p {
 header.header div.header-title p:nth-child(1) {
     font-size: 40px;
     font-weight: 600;
-    margin-top: -10px;
+    margin-top: -15px;
 
     color: rgba(109, 51, 178, 1);
 }
 header.header div.header-title p:nth-child(2) {
-    font-size: 12px;
-    letter-spacing: 5px;
+    font-size: 8px;
+    letter-spacing: 4px;
     margin-top: -5px;
 
     color: #ffffff;
@@ -32,6 +34,7 @@ header.header div.header-title p:nth-child(2) {
 
 header.header ul.header-links {
     display: flex;
+    padding: 0;
     list-style: none;
 }
 header.header ul.header-links li {
@@ -64,7 +67,7 @@ header.header a.header-contact {
 }
 header.header a.header-contact:hover {
     color: #ffffff;
-    background-color: rgba(109, 51, 178, 0.5);
+    background-color: rgba(109, 51, 178, 0.8);
 }
 
 

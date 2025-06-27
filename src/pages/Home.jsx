@@ -1,8 +1,18 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
+import '../styles/Home.css'
 
 const Home = () => {
   return (
-    <Header />
+    <div className="app">
+      <Header />
+      <section id="home">
+        <h1>ALDES Consutling,<br />Agence de Marketing Digital</h1>
+        <h2>Une agence à l'écoute de vos besoins. Vous gagnez, nous gagnons !</h2>
+        <a href="">Découvrir ALDES Consulting</a>
+      </section>
+      <Footer />
+    </div>
   );
 };
 
