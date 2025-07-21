@@ -6,32 +6,29 @@ section#home {
     text-align: center;
     height: 100vh;
 
-    background-image: url("../imgs/bg.png");
+    background-image: url("../imgs/background.webp");
     background-size: cover;
 }
 section#home::before {
     filter: blur(10px);
 }
-
 section#home h1 {
     margin: 0;
     font-size: 60px;
     line-height: 65px;
 
-    color: #ffffff;
+    color: #333333;
 }
-
 section#home h2 {
     font-size: 35px;
     font-weight: 400;
 
-    color: #ffffff;
+    color: #333333;
 }
-
 section#home a {
     padding: 15px;
-    margin-top: 50px;
-    font-size: 20px;
+    margin-top: 40px;
+    font-size: 15px;
 
     border-radius: 3px;
     color: #ffffff;
@@ -42,6 +39,173 @@ section#home a {
 }
 section#home a:hover {
     background-color: rgba(109, 51, 178, 0.8);
+}
+
+section#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+section#services h2 {
+    margin: 0;
+
+    font-size: 2.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    color: #333333;
+}
+section#services section#services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin: 50px 0;
+    padding: 30px 0;
+}
+section#services section#services-cards div.service-card {
+    width: 300px;
+    min-height: 360px;
+    padding: 40px;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+}
+section#services section#services-cards div.service-card img.service-card-img {
+    width: 50px;
+}
+section#services section#services-cards div.service-card h3.service-card-title {
+    margin-top: -50px;
+
+    font-size: 20px;
+
+    color: #333333;
+}
+section#services section#services-cards div.service-card p.service-card-text {
+    margin-top: -50px;
+
+    font-size: 15px;
+
+    color: #888888;
+}
+section#services section#services-cards div.service-card a.service-card-link {
+    display: inline-block;
+
+    font-size: 17px;
+    text-decoration: none;
+
+    color: #333333;
+
+    transition: all ease-in-out 0.3s;
+}
+section#services section#services-cards div.service-card a.service-card-link::after {
+    content: '➔';
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    font-weight: 900;
+    opacity: 0;
+    transition: opacity 0.5s ease, right 0.5s ease;
+}
+section#services section#services-cards div.service-card a.service-card-link:hover {
+    transform: translateX(10px);
+    font-weight: 600;
+    color: rgba(109, 51, 178, 1);
+}
+section#services section#services-cards div.service-card a.service-card-link:hover::after {
+    right: 150px;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    section#home h1 {
+        font-size: 36px;
+        line-height: 45px;
+        padding: 0 15px;
+    }
+
+    section#home h2 {
+        font-size: 20px;
+        padding: 0 15px;
+    }
+
+    section#home a {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    section#services {
+        padding: 30px 15px;
+    }
+
+    section#services section#services-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    section#services section#services-cards .service-card {
+        width: 90%;
+        max-width: 350px;
+        min-height: auto;
+    }
+
+    section#services section#services-cards div.service-card h3.service-card-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    section#services section#services-cards div.service-card p.service-card-text {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    section#services section#services-cards div.service-card a.service-card-link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    section#home {
+        padding: 20px;
+        height: 100vh;
+    }
+
+    section#services h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    section#services section#services-cards {
+        gap: 20px;
+    }
+
+    section#services section#services-cards div.service-card {
+        padding: 20px;
+    }
+
+    section#services section#services-cards div.service-card h3.service-card-title {
+        font-size: 16px;
+    }
+
+    section#services section#services-cards div.service-card p.service-card-text {
+        font-size: 13px;
+    }
+
+    section#services section#services-cards div.service-card a.service-card-link {
+        font-size: 14px;
+    }
 }
 
 
